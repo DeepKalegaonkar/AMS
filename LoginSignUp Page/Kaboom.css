@@ -1,0 +1,157 @@
+/* Kaboom.css */
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #3498db;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.login-signup {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.login-signup h2, .login-signup h3 {
+  margin-bottom: 20px;
+}
+
+.login-signup form {
+  display: inline-block;
+  text-align: left;
+}
+
+.login-link {
+  margin-top: 5px; /* Adjusted margin */
+  text-align: center;
+  color: #3498db;
+}
+
+.login-link p {
+  margin-top: 5px; /* Adjusted margin */
+}
+
+.login-link a {
+  text-decoration: none;
+  color:  #3498db;
+}
+
+.create-account-link a {
+  text-decoration: none;
+  color:  #3498db;
+}
+
+.login-signup input, .login-signup select {
+  display: block;
+  margin-bottom: 10px;
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.login-signup button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.login-signup button:hover {
+  background-color: #2980b9;
+}
+
+#login-form button {
+  display: block;
+  margin: 0 auto;
+}
+
+#signup-submit {
+  display: block;
+  margin-top: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #3498db;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.dropdown-content button:hover {
+  background-color: #2980b9;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover #dropdown-btn {
+  background-color: #2980b9;
+}
+
+#otp-message {
+  display: block;
+}
+
+#otp-input {
+  display: block;
+}
+
+#signup-form {
+  margin-bottom: 10px;
+}
+
+#signup-submit {
+  display: block;
+  margin: 0 auto;
+}
+
+#verification-message {
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: static;
+  margin-top: 12.9vh;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}

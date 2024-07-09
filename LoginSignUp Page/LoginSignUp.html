@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbid - Sign Up</title>
+  <link rel="stylesheet" href="Kaboom.css"> 
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Carbid</h1>
+    </div>
+  </header>
+  
+  <section class="login-signup">
+    <div class="container">
+      <div id="signup-form">
+        <h2>Sign Up</h2>
+        <form action="#" method="POST" id="signup-form">
+          <input type="text" name="fullname" placeholder="Full Name" required>
+          <input type="email" name="email" id="signup-email" placeholder="Email" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <input type="text" name="address" placeholder="Address" required maxlength="50">
+          <input type="tel" name="phone" placeholder="Phone Number" required maxlength="10">
+          <input type="text" name="aadhar" placeholder="Aadhar Number" required maxlength="12" minlength="12">
+          <select name="user-type" id="user-type" required>
+            <option value="">Select User Type</option>
+            <option value="buyer">Buyer</option>
+            <option value="seller">Seller</option>
+          </select>
+          <button id="signup-submit" type="button">Sign Up</button>
+          <div id="verification-message" style="display: none; color: green;">A verification mail has been sent to your email.</div>
+          <div id="verification-code-input" style="display: none;">
+            <input type="text" id="verification-code" placeholder="Enter Verification Code" required>
+            <button id="verify-submit" type="button">Verify</button>
+          </div>
+          <div id="success-message" style="display: none; color: green;">OTP Verified. You have successfully created your account!</div>
+        </form>
+        <div class="login-link" id="login-link">Already have an account? <a href="#login-form">Login</a></div>
+      </div>
+      <div id="login-form" style="display: none;">
+        <h2>Login</h2>
+        <form action="#" method="POST">
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+        <div class="create-account-link" id="create-account-link"><a href="#signup-form">Want to create an account? Sign Up</a></div>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Carbid. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="Thangarang.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add Car to Auction</title>
+    <link rel="stylesheet" href="add_car.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@500;600;700&display=swap"
+    />
+</head>
+<body>
+    <header>
+        <h1>CarBid</h1>
+    </header>
+
+    <main>
+        <h2>Add a Car</h2>
+        <form id="addCarForm">
+                <label for="carMake">Brand:</label>
+                <input type="text" id="carMake" name="carMake" required>
+        
+                <label for="carModel">Model:</label>
+                <input type="text" id="carModel" name="carModel" required>
+        
+                <label for="carYear">Year:</label>
+                <select id="carYear" name="carYear" required>
+                    <option value="">Select Year</option>
+                </select>
+        
+                <label for="carNumberPlate">Number Plate:</label>
+                <input type="text" id="carNumberPlate" name="carNumberPlate" required>
+        
+                <label for="carDescription">Description:</label>
+                <textarea id="carDescription" name="carDescription" rows="4" style="resize: none;" required></textarea>
+        
+                <label for="frontImage" style="color: #3563e9;">Front Image:</label>
+                <input type="file" id="frontImage" name="frontImage" accept="image/*" required>
+                <div class="image-container">
+                    <img id="frontImagePreview" src="#" alt="Front Image Preview">
+                </div>
+                
+                <label for="backImage" style="color: #3563e9;">Rear Image:</label>
+                <input type="file" id="backImage" name="backImage" accept="image/*" required />
+                <div class="image-container">
+                  <img id="backImagePreview" src="#" alt="Back Image Preview" />
+                </div>
+  
+                <label for="sideImage" style="color: #3563e9;">Side Image:</label>
+                <input type="file" id="sideImage" name="sideImage" accept="image/*" required />
+                <div class="image-container">
+                  <img id="sideImagePreview" src="#" alt="Side Image Preview" />
+                </div>
+  
+                <label for="topImage" style="color: #3563e9;">Top Image:</label>
+                <input type="file" id="topImage" name="topImage" accept="image/*" required />
+                <div class="image-container">
+                  <img id="topImagePreview" src="#" alt="Top Image Preview" />
+                </div>
+              </div>
+        
+        
+                <button type="submit">Add Car</button>
+            </form>
+        
+        </form>
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="add_car.js"></script>
+</body>
+</html>

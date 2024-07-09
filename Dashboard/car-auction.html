@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>Carbid - Dashboard</title>
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./car-auction.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="car-auction">
+      <header class="nav-bar-top1">
+        <div class="logo-container">
+          <h1 class="logo3">CarBid</h1>
+          <div class="search">
+            <div class="button"></div>
+            <div class="footer-container">
+              <img
+                class="search-normal-icon"
+                alt=""
+                src="./public/searchnormal.svg"
+              />
+
+              <input
+                class="search-something-here"
+                placeholder="Search something here"
+                type="text"
+              />
+            </div>
+            <img
+              class="vuesaxlinearfilter-icon"
+              alt=""
+              src="./public/vuesaxlinearfilter.svg"
+            />
+          </div>
+        </div>
+        <div class="our-vision-frame">
+          <img
+            class="like-icon"
+            loading="eager"
+            alt=""
+            src="./public/like.svg"
+          />
+
+          <img
+            class="notification-icon"
+            loading="eager"
+            alt=""
+            src="./public/notification.svg"
+          />
+
+          <img
+            class="settings-icon"
+            loading="eager"
+            alt=""
+            src="./public/settings.svg"
+          />
+
+          <img
+            class="image-icon"
+            loading="eager"
+            alt=""
+            src="./public/image@2x.png"
+          />
+        </div>
+      </header>
+      <main class="content1">
+        <section class="featured-partnership-frame">
+          <div class="ads-1">
+            <img class="bg-icon" alt="" src="./public/bg.svg" />
+
+            <div class="the-best-platform">
+              The Best Platform for Car Auctions
+            </div>
+            <div class="ease-of-buying">
+              Ease of buying a car safely and reliably. Of course at a low
+              price.
+            </div>
+            <button class="button-rent">
+              <div class="bid-now">Bid Now</div>
+            </button>
+          </div>
+          <div class="ads-2">
+            <img class="bg-icon1" alt="" src="./public/bg-1.svg" />
+
+            <div class="easy-way-to">Easy way to buy a car at a low price</div>
+            <div class="offering-affordable-car">
+              Offering Affordable Car Auctions with Safe and Comfortable
+              Transactions.
+            </div>
+            <button class="button-rent1">
+              <div class="bid-now1">Bid Now</div>
+            </button>
+          </div>
+        </section>
+        <section class="add-car-section">
+          <h2>Add a Car</h2>
+          <form id="addCarForm">
+            <label for="carMake" style="color: #3563e9;">Brand:</label>
+            <input type="text" id="carMake" name="carMake" required />
+
+            <label for="carModel" style="color: #3563e9;">Model:</label>
+            <input type = "text" id ="carModel" name = "carMake" required/>
+
+            <label for="carYear" style="color: #3563e9;">Year:</label>
+            <select id="carYear" name="carYear" required>
+              <option value="" >Select Year</option></select>  
+
+            <label for="carNumberPlate" style="color: #3563e9;">Number Plate:</label>
+            <input type="text" id="carNumberPlate" name="carNumberPlate" required />
+
+            <label for="carDescription" style="color: #3563e9;">Description:</label>
+            <textarea id="carDescription" name="carDescription" rows="4" style="resize: none;" required></textarea>
+
+            <div class="image-upload">
+              <label for="frontImage" style="color: #3563e9;">Front Image:</label>
+              <input type="file" id="frontImage" name="frontImage" accept="image/*" required />
+              <div class="image-container">
+                <img id="frontImagePreview" src="#" alt="Front Image Preview" />
+              </div>
+
+              <label for="backImage" style="color: #3563e9;">Back Image:</label>
+              <input type="file" id="backImage" name="backImage" accept="image/*" required />
+              <div class="image-container">
+                <img id="backImagePreview" src="#" alt="Back Image Preview" />
+              </div>
+
+              <label for="sideImage" style="color: #3563e9;">Side Image:</label>
+              <input type="file" id="sideImage" name="sideImage" accept="image/*" required />
+              <div class="image-container">
+                <img id="sideImagePreview" src="#" alt="Side Image Preview" />
+              </div>
+
+              <label for="topImage" style="color: #3563e9;">Top Image:</label>
+              <input type="file" id="topImage" name="topImage" accept="image/*" required />
+              <div class="image-container">
+                <img id="topImagePreview" src="#" alt="Top Image Preview" />
+              </div>
+            </div>
+
+            <button type="submit">Add Car</button>
+          </form>
+        </section>
+        <section class="privacy-policy-terms-condition">
+          <div class="live-auctions">
+            <div class="bid-frame">
+              <div class="rental-btn">
+                <div class="bg2"></div>
+                <div class="starting-bid">
+                  <div class="logo-parent">
+                    <div class="mark">
+                      <div class="paracetmol-ip-tablets"></div>
+                    </div>
+                    <div class="live">Live</div>
+                  </div>
+                  <div class="community-link">
+                    <div class="how-it-works-parent">
+                      <b class="locations">Locations</b>
+                      <div class="bussiness-relati-parent">
+                        <div class="select-your-city">Select your city</div>
+                        <img
+                          class="vuesaxoutlinearrow-down-icon"
+                          alt=""
+                          src="./public/vuesaxoutlinearrowdown.svg"
+                        />
+                      </div>
+                    </div>
+                    <div class="paracetmol-ip-tablets1"></div>
+                    <div class="how-it-works-parent1">
+                      <b class="vehicle">Vehicle</b>
+                      <div class="select-your-vehicle-type-parent">
+                        <div class="select-your-vehicle">
+                          Select your vehicle type
+                        </div>
+                        <img
+                          class="vuesaxoutlinearrow-down-icon1"
+                          alt=""
+                          src="./public/vuesaxoutlinearrowdown.svg"
+                        />
+                      </div>
+                    </div>
+                    <div class="calcium-stearate-or-magnesium"></div>
+                  </div>
+                </div>
+                <div class="podcast-child-node">
+                  <b class="cost">Cost</b>
+                  <div class="discord-icon-node">
+                    <div class="select-your-cost">Select your cost range</div>
+                    <img
+                      class="vuesaxoutlinearrow-down-icon2"
+                      alt=""
+                      src="./public/vuesaxoutlinearrowdown.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="frame-footer-parent">
+          <div class="popular2">
+              <div class="popular-car1">Popular Car(s)</div>
+          </div>
+          <div class="catalog-1" id="popularCarSet">
+          </div>
+      
+          <div class="popular2">
+              <div class="popular-car1">Recommended Car(s)</div>
+          </div>
+          <div class="catalog-1" id="recommendedCarSet">
+          </div>
+      </section>
+        <div class="show-more-frame-wrapper">
+          <div class="show-more-frame">
+            <button class="show-more">
+              <div class="show-more1">Show more</div>
+            </button>
+            <div class="car1">120 Car</div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer3">
+        <div class="privacy-policy-frame">
+          <div class="logo-node">
+            <h1 class="logo4">CarBid</h1>
+            <div class="our-vision-is">
+              Our vision is to provide convenience and help increase your sales
+              business.
+            </div>
+          </div>
+          <div class="community-link-group-node">
+            <div class="how-it-works-frame">
+              <div class="about">About</div>
+              <div class="how-it-works-container">
+                <span>
+                  <p class="how-it-works">How it works</p>
+                  <p class="blank-line">&nbsp;</p>
+                  <p class="featured">Featured</p>
+                  <p class="blank-line1">&nbsp;</p>
+                  <p class="partnership">Partnership</p>
+                  <p class="blank-line2">&nbsp;</p>
+                  <p class="bussiness-relation">Bussiness Relation</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="TheJS.js"></script>
+  </body>
+</html>
